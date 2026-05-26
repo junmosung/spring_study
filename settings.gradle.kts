@@ -1,1 +1,3 @@
-rootProject.name = "spring01"
+rootProject.name = "spring-study"
+
+include("01-mvc-basics")

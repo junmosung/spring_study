@@ -1,6 +1,6 @@
 # 환경 구성 검증 기록
 
-`docker compose up -d postgres` + `./gradlew bootRun`으로 앱이 PostgreSQL에 정상 연결되는지 확인한 결과 정리.
+`docker compose up -d postgres` + `./gradlew :01-mvc-basics:bootRun`으로 앱이 PostgreSQL에 정상 연결되는지 확인한 결과 정리.
 이후 동일 문제 발생 시 참고용.
 
 ## 1. 연결 확인 결과
@@ -83,14 +83,14 @@ Spring Boot 4.0 환경에서 새 라이브러리를 붙일 때는 `spring-boot-<
 cp .env.example .env                       # 필요 시 DB_PORT 충돌 회피
 docker compose up -d postgres              # postgres만 띄움
 set -a; . ./.env; set +a                   # 셸에 .env 주입
-./gradlew bootRun                          # 앱 부팅
+./gradlew :01-mvc-basics:bootRun           # 앱 부팅
 # 로그에서 "Migrating schema" 와 "Started Spring01ApplicationKt" 확인
 ```
 
 DB 직접 확인:
 
 ```bash
-docker exec spring01-postgres psql -U spring01 -d spring01 -c "\dt"
-docker exec spring01-postgres psql -U spring01 -d spring01 \
+docker exec spring-study-postgres psql -U spring01 -d spring01 -c "\dt"
+docker exec spring-study-postgres psql -U spring01 -d spring01 \
     -c "SELECT version, description, success, installed_on FROM flyway_schema_history;"
 ```
