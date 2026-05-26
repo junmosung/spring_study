@@ -29,6 +29,8 @@ spring-study/
 
 다음 모듈은 `02-…` 식으로 번호와 슬러그를 이어 붙여 추가한다. 추가 절차는 [`docs/getting-started.md`](docs/getting-started.md)의 "새 서브 프로젝트 추가하기" 섹션 참고.
 
+학습 순서·핵심 개념·신규 기술 우선순위는 [`docs/learning-roadmap.md`](docs/learning-roadmap.md) 참고.
+
 ## Quick start
 
 ```bash
