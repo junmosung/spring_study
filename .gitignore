@@ -47,5 +47,6 @@ out/
 **/.DS_Store
 
 ### Claude Code (local config) ###
-.claude/
+.claude/*
+!.claude/docs/
 

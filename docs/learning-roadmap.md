@@ -6,6 +6,12 @@
 
 ---
 
+## 관련 문서 (Tier 무관, 학습 전반에 적용)
+
+- [SOLID와 헥사고날, 비판적으로 다시 보기](../.claude/docs/design-patterns/solid-and-hexagonal.md) — 모든 Tier를 관통하는 설계 사고. 패턴을 *언제* 꺼내고 *언제* 꺼내지 말아야 하는지의 판단 기준. Kotlin 예시 + ASCII 다이어그램 포함.
+
+---
+
 ## Tier 1 — 핵심 기본기 (`01-mvc-basics`에서 다룰 것)
 
 체득하지 않으면 그 위의 어떤 기술도 표면적으로만 쓰게 된다.
