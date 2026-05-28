@@ -44,7 +44,7 @@ class GlobalExceptionHandler {
     fun handleParamValidation(ex: HandlerMethodValidationException): ProblemDetail =
         ProblemDetail.forStatusAndDetail(HttpStatus.BAD_REQUEST, "요청 파라미터 검증에 실패했습니다.").apply {
             title = "Validation Failed"
-            setProperty("errors", ex.allValidationResults.flatMap { result ->
+            setProperty("errors", ex.parameterValidationResults.flatMap { result ->
                 result.resolvableErrors.map { err ->
                     mapOf(
                         "parameter" to (result.methodParameter.parameterName ?: "?"),
