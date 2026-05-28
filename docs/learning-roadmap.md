@@ -9,6 +9,8 @@
 ## 관련 문서 (Tier 무관, 학습 전반에 적용)
 
 - [SOLID와 헥사고날, 비판적으로 다시 보기](../.claude/docs/design-patterns/solid-and-hexagonal.md) — 모든 Tier를 관통하는 설계 사고. 패턴을 *언제* 꺼내고 *언제* 꺼내지 말아야 하는지의 판단 기준. Kotlin 예시 + ASCII 다이어그램 포함.
+- [SOLID와 Hexagonal — 깊이 있는 이해](../.claude/docs/design-patterns/solid-and-hexagonal-deep-dive.md) — 두 주제의 출처·정의·메커니즘을 깊이 있게 다룬 심층 문서. Liskov-Wing 형식, Cockburn의 원 동기, 친척 아키텍처(Onion/Clean)와의 관계 포함.
+- [Spring 생태계 패턴 카탈로그](../.claude/docs/design-patterns/spring-patterns-catalog.md) — GoF·PoEAA·아키텍처 스타일·한국 커뮤니티 유행을 4축으로 정리한 레퍼런스. 학습 중 패턴 이름이 등장할 때 사전처럼 사용.
 
 ---
 
