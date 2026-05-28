@@ -24,7 +24,7 @@
 
 ### 2. Spring MVC 요청 흐름
 - **왜**: `DispatcherServlet` → `HandlerMapping` → `HandlerAdapter` → `HttpMessageConverter`/`ViewResolver` 흐름을 모르면 디버깅이 어렵다.
-- **무엇**: `@RestController`, `@RequestMapping` 변형, Jackson(`jackson-module-kotlin` 이미 포함), content negotiation, `ResponseEntity`, **Filter vs Interceptor**(별도 문서: [`01-mvc-basics/docs/filter-vs-interceptor.md`](../01-mvc-basics/docs/filter-vs-interceptor.md)).
+- **무엇**: `@RestController`, `@RequestMapping` 변형, Jackson(`jackson-module-kotlin` 이미 포함), content negotiation, `ResponseEntity`, **Filter vs Interceptor**(별도 문서: [`01-mvc-basics/docs/03-mvc/filter-vs-interceptor.md`](../01-mvc-basics/docs/03-mvc/filter-vs-interceptor.md)).
 
 ### 3. Validation + 예외 처리
 - **왜**: 실무 API는 입력 검증과 일관된 에러 응답이 80%. 코드 품질 차이가 가장 크게 드러난다. `spring-boot-starter-validation` 이미 의존성에 포함됨.

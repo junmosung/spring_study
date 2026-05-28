@@ -117,10 +117,10 @@ Q3. 보안/인증처럼 컨트롤러 도달 전에 막아야 하는가?
 
 | 파일 | 역할 |
 | --- | --- |
-| [`web/filter/RequestLoggingFilter.kt`](../src/main/kotlin/me/victor/spring01/web/filter/RequestLoggingFilter.kt) | 모든 요청의 method/URI/status/소요시간을 INFO로 로깅 |
-| [`web/interceptor/HandlerTimingInterceptor.kt`](../src/main/kotlin/me/victor/spring01/web/interceptor/HandlerTimingInterceptor.kt) | 핸들러 메서드 단위 소요 시간을 측정 (`HandlerMethod` 사용) |
-| [`web/WebConfig.kt`](../src/main/kotlin/me/victor/spring01/web/WebConfig.kt) | Filter는 `FilterRegistrationBean`, Interceptor는 `WebMvcConfigurer`로 등록 |
-| [`web/PingController.kt`](../src/main/kotlin/me/victor/spring01/web/PingController.kt) | 흐름 확인용 `GET /ping` |
+| [`web/filter/RequestLoggingFilter.kt`](../../src/main/kotlin/me/victor/spring01/web/filter/RequestLoggingFilter.kt) | 모든 요청의 method/URI/status/소요시간을 INFO로 로깅 |
+| [`web/interceptor/HandlerTimingInterceptor.kt`](../../src/main/kotlin/me/victor/spring01/web/interceptor/HandlerTimingInterceptor.kt) | 핸들러 메서드 단위 소요 시간을 측정 (`HandlerMethod` 사용) |
+| [`web/WebConfig.kt`](../../src/main/kotlin/me/victor/spring01/web/WebConfig.kt) | Filter는 `FilterRegistrationBean`, Interceptor는 `WebMvcConfigurer`로 등록 |
+| [`web/PingController.kt`](../../src/main/kotlin/me/victor/spring01/web/PingController.kt) | 흐름 확인용 `GET /ping` |
 
 ### 실행해서 확인
 

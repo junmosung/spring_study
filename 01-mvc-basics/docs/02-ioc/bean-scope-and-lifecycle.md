@@ -121,11 +121,11 @@ class MyBpp : BeanPostProcessor {
 
 | 파일 | 역할 |
 | --- | --- |
-| [`learning/lifecycle/SingletonAndPrototype.kt`](../src/main/kotlin/me/victor/spring01/learning/lifecycle/SingletonAndPrototype.kt) | `SingletonCounter` (기본), `PrototypeTicket` (`@Scope`) |
-| [`learning/lifecycle/TicketIssuer.kt`](../src/main/kotlin/me/victor/spring01/learning/lifecycle/TicketIssuer.kt) | `ObjectProvider<T>`로 prototype 함정 회피 |
-| [`learning/lifecycle/LifecycleAwareBean.kt`](../src/main/kotlin/me/victor/spring01/learning/lifecycle/LifecycleAwareBean.kt) | 모든 훅(`@PostConstruct`, `InitializingBean`, `BeanNameAware`, `@PreDestroy`, `DisposableBean`) 한 번씩 |
-| [`learning/lifecycle/LoggingBeanPostProcessor.kt`](../src/main/kotlin/me/victor/spring01/learning/lifecycle/LoggingBeanPostProcessor.kt) | 모든 빈에 적용되는 BPP, learning 패키지만 로그 |
-| [`learning/lifecycle/LifecycleDemoConfig.kt`](../src/main/kotlin/me/victor/spring01/learning/lifecycle/LifecycleDemoConfig.kt) | singleton 동일성·prototype 차이 검증 |
+| [`learning/lifecycle/SingletonAndPrototype.kt`](../../src/main/kotlin/me/victor/spring01/learning/lifecycle/SingletonAndPrototype.kt) | `SingletonCounter` (기본), `PrototypeTicket` (`@Scope`) |
+| [`learning/lifecycle/TicketIssuer.kt`](../../src/main/kotlin/me/victor/spring01/learning/lifecycle/TicketIssuer.kt) | `ObjectProvider<T>`로 prototype 함정 회피 |
+| [`learning/lifecycle/LifecycleAwareBean.kt`](../../src/main/kotlin/me/victor/spring01/learning/lifecycle/LifecycleAwareBean.kt) | 모든 훅(`@PostConstruct`, `InitializingBean`, `BeanNameAware`, `@PreDestroy`, `DisposableBean`) 한 번씩 |
+| [`learning/lifecycle/LoggingBeanPostProcessor.kt`](../../src/main/kotlin/me/victor/spring01/learning/lifecycle/LoggingBeanPostProcessor.kt) | 모든 빈에 적용되는 BPP, learning 패키지만 로그 |
+| [`learning/lifecycle/LifecycleDemoConfig.kt`](../../src/main/kotlin/me/victor/spring01/learning/lifecycle/LifecycleDemoConfig.kt) | singleton 동일성·prototype 차이 검증 |
 
 ### 실행해서 확인
 

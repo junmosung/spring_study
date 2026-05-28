@@ -191,8 +191,8 @@ fun delete(@PathVariable id: Long): ResponseEntity<Void> =
 
 | 파일 | 역할 |
 | --- | --- |
-| [`learning/mvc/EchoModels.kt`](../src/main/kotlin/me/victor/spring01/learning/mvc/EchoModels.kt) | 요청/응답 data class (Jackson + kotlin-module로 자동 직렬화) |
-| [`learning/mvc/EchoController.kt`](../src/main/kotlin/me/victor/spring01/learning/mvc/EchoController.kt) | `@RestController` + `@RequestMapping`, 모든 핵심 어노테이션 + content negotiation + `ResponseEntity` |
+| [`learning/mvc/EchoModels.kt`](../../src/main/kotlin/me/victor/spring01/learning/mvc/EchoModels.kt) | 요청/응답 data class (Jackson + kotlin-module로 자동 직렬화) |
+| [`learning/mvc/EchoController.kt`](../../src/main/kotlin/me/victor/spring01/learning/mvc/EchoController.kt) | `@RestController` + `@RequestMapping`, 모든 핵심 어노테이션 + content negotiation + `ResponseEntity` |
 
 ### curl로 실행해 확인
 

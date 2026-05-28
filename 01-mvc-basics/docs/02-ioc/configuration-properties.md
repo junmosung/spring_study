@@ -169,10 +169,10 @@ src/main/resources/
 
 | 파일 | 역할 |
 | --- | --- |
-| [`learning/config/AppProperties.kt`](../src/main/kotlin/me/victor/spring01/learning/config/AppProperties.kt) | 중첩 / 컬렉션 / Map / Duration / DataSize / 기본값 |
-| [`learning/config/MailProperties.kt`](../src/main/kotlin/me/victor/spring01/learning/config/MailProperties.kt) | `@Validated` + jakarta validation |
-| [`learning/config/ConfigDemoConfig.kt`](../src/main/kotlin/me/victor/spring01/learning/config/ConfigDemoConfig.kt) | `@EnableConfigurationProperties` + 시작 시 출력 |
-| [`src/main/resources/application.yaml`](../src/main/resources/application.yaml) | `app.*` / `mail.*` 섹션 |
+| [`learning/config/AppProperties.kt`](../../src/main/kotlin/me/victor/spring01/learning/config/AppProperties.kt) | 중첩 / 컬렉션 / Map / Duration / DataSize / 기본값 |
+| [`learning/config/MailProperties.kt`](../../src/main/kotlin/me/victor/spring01/learning/config/MailProperties.kt) | `@Validated` + jakarta validation |
+| [`learning/config/ConfigDemoConfig.kt`](../../src/main/kotlin/me/victor/spring01/learning/config/ConfigDemoConfig.kt) | `@EnableConfigurationProperties` + 시작 시 출력 |
+| [`src/main/resources/application.yaml`](../../src/main/resources/application.yaml) | `app.*` / `mail.*` 섹션 |
 
 ### 실행해서 확인
 

@@ -423,10 +423,10 @@ HandlerExceptionResolver 체인이 순서대로 시도:
 
 | 파일 | 역할 |
 |---|---|
-| [`web/filter/RequestLoggingFilter.kt`](../src/main/kotlin/me/victor/spring01/web/filter/RequestLoggingFilter.kt) | Filter의 `try/finally`로 [A]+[B] 시점 모두 활용 |
-| [`web/interceptor/HandlerTimingInterceptor.kt`](../src/main/kotlin/me/victor/spring01/web/interceptor/HandlerTimingInterceptor.kt) | `HandlerMethod`로 핸들러 단위 metric. `afterCompletion`에 정리 |
-| [`web/WebConfig.kt`](../src/main/kotlin/me/victor/spring01/web/WebConfig.kt) | Filter는 `FilterRegistrationBean`, Interceptor는 `WebMvcConfigurer`로 등록 |
-| [`learning/mvc/EchoController.kt`](../src/main/kotlin/me/victor/spring01/learning/mvc/EchoController.kt) | ArgumentResolver/ReturnValueHandler가 다루는 모든 어노테이션 케이스 |
+| [`web/filter/RequestLoggingFilter.kt`](../../src/main/kotlin/me/victor/spring01/web/filter/RequestLoggingFilter.kt) | Filter의 `try/finally`로 [A]+[B] 시점 모두 활용 |
+| [`web/interceptor/HandlerTimingInterceptor.kt`](../../src/main/kotlin/me/victor/spring01/web/interceptor/HandlerTimingInterceptor.kt) | `HandlerMethod`로 핸들러 단위 metric. `afterCompletion`에 정리 |
+| [`web/WebConfig.kt`](../../src/main/kotlin/me/victor/spring01/web/WebConfig.kt) | Filter는 `FilterRegistrationBean`, Interceptor는 `WebMvcConfigurer`로 등록 |
+| [`learning/mvc/EchoController.kt`](../../src/main/kotlin/me/victor/spring01/learning/mvc/EchoController.kt) | ArgumentResolver/ReturnValueHandler가 다루는 모든 어노테이션 케이스 |
 
 ---
 

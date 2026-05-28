@@ -181,11 +181,11 @@ Q. 후보 중 "기본"이라 부를 만한 게 명확한가?
 
 | 파일 | 역할 |
 | --- | --- |
-| [`learning/ioc/Greeters.kt`](../src/main/kotlin/me/victor/spring01/learning/ioc/Greeters.kt) | `Greeter` 인터페이스 + 3개 구현체. `@Primary` / `@Qualifier`. |
-| [`learning/ioc/ClockConfig.kt`](../src/main/kotlin/me/victor/spring01/learning/ioc/ClockConfig.kt) | `@Configuration` + `@Bean` 스타일 (서드파티 `Clock` 등록). |
-| [`learning/ioc/GreetingService.kt`](../src/main/kotlin/me/victor/spring01/learning/ioc/GreetingService.kt) | Constructor 주입, `@Primary` 후보를 받음. |
-| [`learning/ioc/QualifiedGreetingService.kt`](../src/main/kotlin/me/victor/spring01/learning/ioc/QualifiedGreetingService.kt) | `@Qualifier("japanese")`로 특정 후보 주입. |
-| [`learning/ioc/IocDemoConfig.kt`](../src/main/kotlin/me/victor/spring01/learning/ioc/IocDemoConfig.kt) | `ApplicationRunner`로 시작 시 두 서비스 호출 결과 출력. |
+| [`learning/ioc/Greeters.kt`](../../src/main/kotlin/me/victor/spring01/learning/ioc/Greeters.kt) | `Greeter` 인터페이스 + 3개 구현체. `@Primary` / `@Qualifier`. |
+| [`learning/ioc/ClockConfig.kt`](../../src/main/kotlin/me/victor/spring01/learning/ioc/ClockConfig.kt) | `@Configuration` + `@Bean` 스타일 (서드파티 `Clock` 등록). |
+| [`learning/ioc/GreetingService.kt`](../../src/main/kotlin/me/victor/spring01/learning/ioc/GreetingService.kt) | Constructor 주입, `@Primary` 후보를 받음. |
+| [`learning/ioc/QualifiedGreetingService.kt`](../../src/main/kotlin/me/victor/spring01/learning/ioc/QualifiedGreetingService.kt) | `@Qualifier("japanese")`로 특정 후보 주입. |
+| [`learning/ioc/IocDemoConfig.kt`](../../src/main/kotlin/me/victor/spring01/learning/ioc/IocDemoConfig.kt) | `ApplicationRunner`로 시작 시 두 서비스 호출 결과 출력. |
 
 ### 실행해서 확인
 

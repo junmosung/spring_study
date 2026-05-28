@@ -2,7 +2,7 @@
 
 Spring MVC 학습용 첫 번째 서브 프로젝트의 환경 구성과 전반적인 흐름을 정리한 문서.
 MVC 계층(Controller / Service / Repository / Domain)은 학습 목적상 직접 구현하므로 본 문서에는 포함하지 않는다.
-모노리포 전반 / 공유 인프라(postgres, env)에 대한 내용은 루트의 [`docs/getting-started.md`](../../docs/getting-started.md) 참고.
+모노리포 전반 / 공유 인프라(postgres, env)에 대한 내용은 루트의 [`docs/getting-started.md`](../../../docs/getting-started.md) 참고.
 
 ## 기술 스택
 
@@ -34,9 +34,19 @@ spring-study/                   # 루트 (Git 리포)
     ├── Dockerfile              # 본 모듈 빌드용 (필요 시)
     ├── .dockerignore
     ├── docs/
-    │   ├── architecture.md     # 본 문서
-    │   ├── setup-verification.md
-    │   └── jetty-vs-tomcat.md
+    │   ├── 01-foundation/      # 환경·런타임·아키텍처
+    │   │   ├── architecture.md     # 본 문서
+    │   │   ├── setup-verification.md
+    │   │   └── jetty-vs-tomcat.md
+    │   ├── 02-ioc/             # IoC / DI / Bean / 외부 설정 바인딩
+    │   │   ├── bean-registration-and-di.md
+    │   │   ├── bean-scope-and-lifecycle.md
+    │   │   └── configuration-properties.md
+    │   └── 03-mvc/             # 요청 처리 / Filter / Interceptor / Validation
+    │       ├── mvc-request-flow.md
+    │       ├── filter-vs-interceptor.md
+    │       ├── filter-vs-interceptor-deep-dive.md
+    │       └── validation-and-problem-detail.md
     └── src/
         ├── main/
         │   ├── kotlin/me/victor/spring01/
@@ -142,4 +152,4 @@ Hibernate → PostgreSQL
 - 통합 테스트: `@SpringBootTest` + Testcontainers — 컨트롤러부터 DB까지 전체 흐름.
 - Flyway는 테스트 컨텍스트에서도 동일하게 실행되므로 마이그레이션이 곧 테스트 스키마가 된다.
 
-실행 방법은 [`getting-started.md`](./getting-started.md) 참고.
+실행 방법은 루트의 [`docs/getting-started.md`](../../../docs/getting-started.md) 참고.
