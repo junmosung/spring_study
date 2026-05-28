@@ -13,11 +13,12 @@ spring-study/
 ├── docs/
 │   └── getting-started.md     # 공통 실행 가이드 (env, compose, gradle 명령)
 └── 01-mvc-basics/             # 첫 번째 학습 모듈
+    ├── README.md
     ├── build.gradle.kts
     ├── docs/
-    │   ├── architecture.md
-    │   ├── setup-verification.md
-    │   └── jetty-vs-tomcat.md
+    │   ├── 01-foundation/     # 환경·런타임·아키텍처
+    │   ├── 02-ioc/            # IoC / DI / Bean / 외부 설정 바인딩
+    │   └── 03-mvc/            # 요청 처리 / Filter / Interceptor / Validation
     └── src/
 ```
 
