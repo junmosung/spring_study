@@ -33,3 +33,28 @@ logging:
     org.hibernate.SQL: DEBUG
     org.hibernate.orm.jdbc.bind: TRACE
     org.flywaydb: INFO
+
+# --- @ConfigurationProperties 데모 (Tier 1 #1-c) ---
+# learning/config/AppProperties.kt, MailProperties.kt 와 1:1 매핑.
+# kebab-case 키가 camelCase 필드로 자동 변환되는 relaxed binding 확인용.
+app:
+  name: spring-study
+  owner:
+    name: Victor
+    email: victor@example.com
+  features:
+    signup: true
+    beta-ui: false
+  tags:
+    - learning
+    - kotlin
+  timeouts:
+    http: 5s
+    db: 2s
+  cache-ttl: 10m
+  max-upload-size: 20MB
+
+mail:
+  host: smtp.example.com
+  port: 587
+  from: noreply@example.com
